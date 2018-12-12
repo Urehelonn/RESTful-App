@@ -1,0 +1,32 @@
+#icon{
+    color: orange;
+}
+
+.main.container{
+    margin-top: 7em;
+}
+
+.ui.segment.outer{
+    color: white;
+    background-color: rgb(42, 50, 63);
+}
+.ui.header.outer{
+    color: white;
+    background-color: rgb(42, 50, 63);
+}
+.item.inner{
+    color: black;
+    background-color: white;
+}
+
+p{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.inline{
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 8px;
+    margin-left: 0;
+}

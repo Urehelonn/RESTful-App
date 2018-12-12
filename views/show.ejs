@@ -1,0 +1,22 @@
+<%include partial/header %>
+
+<div class="ui main text container segment outer">
+    <div class="ui huge header outer"><%= blog.title %></div>
+    <div class="ui top attached segment">
+        <div class="item inner">
+            <img class="ui centered rounded image" src="<%= blog.img%>" height="300">
+            <div class="content">
+                <span><%= blog.created.toDateString() %></span>
+            </div>
+            <p><%-blog.body%></p>
+        </div>
+    </div>
+    <form action="/blogs/<%=blog.id %>/edit" class="inline">
+        <input type="submit" class="ui inverted button" value="Edit Post"/>
+    </form>
+    <form action="/blogs/<%=blog.id %>?_method=DELETE" method="POST" class="inline">
+        <input type="submit" class="ui red inverted button" value="DELETE"/>
+    </form>
+</div>
+
+<%include partial/footer %>
